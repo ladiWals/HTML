@@ -1,0 +1,23 @@
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 5px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 37px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 30px 50px;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  padding: 10px;
+}
