@@ -104,7 +104,93 @@
 		</li>
 	</ul>
 
+<div class="list_decor">
+	<ol class="list_round">
+		<li><a href="">декорированный нумерованный список</a></li>
+		<li><a href="">декорированный нумерованный список</a></li>
+		<li><a href="">декорированный нумерованный список</a></li>
+		<li><a href="">декорированный нумерованный список</a></li>
+		<li><a href="">декорированный нумерованный список</a></li>
+	</ol>
+
+	<ol class="decor_2">
+		<li>декорирование стиль 2</li>
+		<li>декорирование стиль 2</li>
+		<li>декорирование стиль 2</li>
+		<li>декорирование стиль 2</li>
+		<li>декорирование стиль 2</li>
+	</ol>
+</div>
 
 </body>
 
 </html>
+
+<style>
+
+	.list_decor li {
+		max-width: 400px;
+	}
+
+	.list_decor {
+		padding: 30px;
+		background-color: #EEEEFF;
+	}
+
+	.list_round {
+		counter-reset: li;
+		list-style: none;
+		font: 18px "Trebuchet MS", "Lucida Sans";
+		padding: 0;
+	}
+
+	.list_round a {
+		position: relative;
+		display: block;
+		padding: .4em .4em .4em 2em;
+		margin: .5em 0;
+		background: #DAD2CA;
+		color: #444;
+		text-decoration: none;
+		border-radius: .3em;
+		transition: .3s ease-out;
+	}
+
+	.list_round a:hover {
+		background: #E9E4E0;
+	}
+
+	.list_round a:before {
+		content: counter(li);
+		counter-increment: li;
+		position: absolute;
+		left: -1.3em;
+		top: 50%;
+		margin-top: -1.3em;
+		background: #8FD4C1;
+		height: 2em;
+		width: 2em;
+		line-height: 2em;
+		border: .3em solid white;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 2em;
+	}
+
+	.decor_2 {
+		font: 20px;
+	}
+
+	.decor_2 li {
+		display: block;
+		margin-top: 10px;
+		padding: 10px;
+		background-color: orange;
+		border: 2px solid #88AA88;
+		border-radius: 20px;
+	}
+
+	.decor_2 li:hover {
+		background-color: #99DD99;
+	}
+</style>
